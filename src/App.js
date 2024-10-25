@@ -56,6 +56,7 @@ const App = () => {
 
     // Save the user's choice
     setUserChoices((prevChoices) => [...prevChoices, choice]);
+    console.log(userChoices)
 
     // Move to the next scenario
     if (currentScenario < scenarios.length - 1) {
