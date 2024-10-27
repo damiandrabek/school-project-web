@@ -1,10 +1,10 @@
 const Results = ({ points, onRestart }) => {
   return (
     <div className="results">
-      <h2>Results</h2>
-      <p>Military Aspect: {points.military}</p>
-      <p>Ethical Aspect: {points.ethical}</p>
-      <p>Usage of Resources: {points.resources}</p>
+      <h2>Celkové body</h2>
+      <p>Vojenské ciele: {points.military}</p>
+      <p>Etický aspekt: {points.ethical}</p>
+      <p>Využitie zdrojov: {points.resources}</p>
       <button onClick={onRestart}>Restart</button>
     </div>
   );

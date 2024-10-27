@@ -18,6 +18,14 @@ body {
 .scenario {
   padding: 1rem;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  p {
+    width: 30rem;
+    text-align: justify;
+  }
 }
 
 .choices {

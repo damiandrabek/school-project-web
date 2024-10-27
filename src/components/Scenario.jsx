@@ -4,9 +4,9 @@ const Scenario = ({ scenario, onChoice }) => {
       <h2>{scenario.title}</h2>
       <p>{scenario.description}</p>
       <div className="choices">
-        <button onClick={() => onChoice("A")}>Option A</button>
-        <button onClick={() => onChoice("B")}>Option B</button>
-        <button onClick={() => onChoice("C")}>Option C</button>
+        <button onClick={() => onChoice("A")}>Možnosť A</button>
+        <button onClick={() => onChoice("B")}>Možnosť B</button>
+        <button onClick={() => onChoice("C")}>Možnosť C</button>
       </div>
     </div>
   );
