@@ -30,6 +30,12 @@ const App = () => {
         B: { military: 1, ethical: 2, resources: 2 },
         C: { military: 0, ethical: 3, resources: 1 },
       },
+      optionNames: {
+        A: "Spustiť okamžitú odvetu kybernetickým protiútokom",
+        B: "Zamerať sa na zabezpečenie vlastných systémov",
+        C: "Hľadať diplomatické riešenie",
+      },
+      imagePath: "/img/scenario1.webp",
     },
 
     {
@@ -42,6 +48,12 @@ const App = () => {
         B: { military: 1, ethical: 3, resources: 1 },
         C: { military: -1, ethical: 3, resources: 1 },
       },
+      optionNames: {
+        A: "Dôverovať odporúčaniu AI",
+        B: "Odložiť útok na overenie ľuďmi",
+        C: "Zrušiť operáciu",
+      },
+      imagePath: "/img/scenario2.webp",
     },
 
     {
@@ -54,6 +66,12 @@ const App = () => {
         B: { military: 1, ethical: 3, resources: 2 },
         C: { military: -1, ethical: 3, resources: 1 },
       },
+      optionNames: {
+        A: "Okamžite nasadiť útok",
+        B: "Čakať na ďalšie informácie",
+        C: "Zrušiť misiu",
+      },
+      imagePath: "/img/scenario3.webp",
     },
 
     {
@@ -66,6 +84,12 @@ const App = () => {
         B: { military: 1, ethical: 3, resources: 2 },
         C: { military: -1, ethical: 2, resources: 1 },
       },
+      optionNames: {
+        A: "Rýchlo nasadiť novú technológiu na vojenskú výhodu",
+        B: "Dôkladne otestovať pred nasadením",
+        C: "Odložiť nasadenie, kým nebudú vyriešené etické obavy",
+      },
+      imagePath: "/img/scenario4.webp",
     },
 
     {
@@ -78,6 +102,12 @@ const App = () => {
         B: { military: 1, ethical: 2, resources: 2 },
         C: { military: 0, ethical: 3, resources: 1 },
       },
+      optionNames: {
+        A: "Spustiť preventívny útok proti vojenským cieľom",
+        B: "Zlepšiť kybernetickú obranu a proti-dezinformačné opatrenia",
+        C: "Zapojiť sa do diplomatických rokovaní a posilniť aliancie",
+      },
+      imagePath: "/img/scenario5.webp",
     },
   ];
 
@@ -128,6 +158,10 @@ const App = () => {
             points={points}
             onRestart={handleRestart}/>
       ))}
+      <div className='copyright'>
+        &copy; 2024 Damian Drábek. Všetky práva vyhradené.
+      </div>
+
     </div>
   );
 }

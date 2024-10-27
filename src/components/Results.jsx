@@ -5,7 +5,7 @@ const Results = ({ points, onRestart }) => {
       <p>Vojenské ciele: {points.military}</p>
       <p>Etický aspekt: {points.ethical}</p>
       <p>Využitie zdrojov: {points.resources}</p>
-      <button onClick={onRestart}>Restart</button>
+      <button onClick={onRestart}>Začať od znova</button>
     </div>
   );
 };
