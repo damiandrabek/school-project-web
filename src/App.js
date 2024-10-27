@@ -147,21 +147,17 @@ const App = () => {
 
   return (
     <div>
-      {isGameStarted !== true ? <Intro onStart={handleStart}/> : (
-        currentScenario !== null ? (
-          <Scenario
-            scenario={scenarios[currentScenario]}
-            onChoice = {handleChoice}
-          />
-        ) : (
-          <Results 
-            points={points}
-            onRestart={handleRestart}/>
-      ))}
-      <div className='copyright'>
-        &copy; 2024 Damian Drábek. Všetky práva vyhradené.
-      </div>
-
+      {isGameStarted !== true ? (
+        <Intro onStart={handleStart} />
+      ) : currentScenario !== null ? (
+        <Scenario
+          scenario={scenarios[currentScenario]}
+          onChoice={handleChoice}
+        />
+      ) : (
+        <Results points={points} onRestart={handleRestart} />
+      )}
+      
     </div>
   );
 }
