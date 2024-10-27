@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 
 import Intro from './components/Intro';
 import Scenario from './components/Scenario';
+import Subtotal from "./components/Subtotal";
 import Results from './components/Results';
 
 const App = () => {
@@ -150,14 +151,16 @@ const App = () => {
       {isGameStarted !== true ? (
         <Intro onStart={handleStart} />
       ) : currentScenario !== null ? (
-        <Scenario
-          scenario={scenarios[currentScenario]}
-          onChoice={handleChoice}
-        />
+        <>
+          <Subtotal points={points} />
+          <Scenario
+            scenario={scenarios[currentScenario]}
+            onChoice={handleChoice}
+          />
+        </>
       ) : (
         <Results points={points} onRestart={handleRestart} />
       )}
-      
     </div>
   );
 }

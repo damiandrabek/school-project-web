@@ -23,9 +23,9 @@ const Scenario = ({ scenario, onChoice }) => {
       </p>
 
       <div className="choices">
-        <button onClick={() => onChoice("A")}>Možnosť A</button>
-        <button onClick={() => onChoice("B")}>Možnosť B</button>
-        <button onClick={() => onChoice("C")}>Možnosť C</button>
+        <button onClick={() => onChoice("A")}>A</button>
+        <button onClick={() => onChoice("B")}>B</button>
+        <button onClick={() => onChoice("C")}>C</button>
       </div>
     </div>
   );
